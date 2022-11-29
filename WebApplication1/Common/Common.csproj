@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="UserModels\**" />
+		<EmbeddedResource Remove="UserModels\**" />
+		<None Remove="UserModels\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="DevExpress.Xpo" Version="21.1.6" />
+	</ItemGroup>
+
+</Project>
