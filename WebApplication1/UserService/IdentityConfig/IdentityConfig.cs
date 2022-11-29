@@ -22,10 +22,15 @@ namespace UserService.IdentityConfig
 
             return new List<Client>
             {
-
+                new Client
+                {
+                    ClientId = "FeedbackService",
+                    AccessTokenType = AccessTokenType.Jwt,
+                    AllowedScopes = { "FeedbackService" },
+                    ClientSecrets = {new Secret(feedbackServiceKey.Sha256())}
+                },
 
             };
-
 
         }
 
