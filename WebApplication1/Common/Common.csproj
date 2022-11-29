@@ -12,6 +12,7 @@
 
 	<ItemGroup>
 	  <PackageReference Include="DevExpress.Xpo" Version="21.1.6" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	</ItemGroup>
 
 </Project>
